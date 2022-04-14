@@ -109,7 +109,7 @@ In order to run the program you need to provide all the needed arguments:
 4. -he (heuristic): what type of heuristic should be use (can be: "trivial", "admissible1", "admissible2", "non-admissible")
 5. -t (timeout): after how many seconds the algorithm should stop searching for the solution
 
-You can run this program using `python` or `python3` command.
+You can run this program by opening your terminal and using `python` or `python3` command.
 
 ### **Syntax**:
 
@@ -124,5 +124,7 @@ $ python main.py -if input_folder -of output_folder -nsol 1 -he trivial -t 20
 ```
 $ python main.py --input_folder input_folder --output_folder output_folder -nsol 4 --heuristic "admissible2" --timeout 5 
 ```
+You can also run this program in PyCharm by setting up the program variables from *Run -> Edit configurations -> Parameters*.
+
 
 This project was build using `Python 3.10.3` version.
