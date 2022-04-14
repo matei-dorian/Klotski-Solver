@@ -1,0 +1,563 @@
+_________________ Breath First Search Algorithm _________________
+Time limit exceeded
+_________________ End of BFS _________________
+
+__________________ Depth First Search Algorithm _________________
+Maximum recursion depth exceeded
+_________________ End of DFS _________________
+
+_________________ Iterative Depth First Search Algorithm _________________
+Time limit exceeded
+_________________ End of IDFS _________________
+
+_________________ A* Algorithm _________________
+Solution:
+1)
+####...###
+#..bb.acc#
+#..b***.d#
+#..b***.d#
+##########
+
+2)
+Move b to the left
+####...###
+#.bb..acc#
+#.b.***.d#
+#.b.***.d#
+##########
+
+3)
+Move * to the left
+####...###
+#.bb..acc#
+#.b***..d#
+#.b***..d#
+##########
+
+4)
+Move a down
+####...###
+#.bb...cc#
+#.b***a.d#
+#.b***..d#
+##########
+
+5)
+Move a to the right
+####...###
+#.bb...cc#
+#.b***.ad#
+#.b***..d#
+##########
+
+6)
+Move * to the right
+####...###
+#.bb...cc#
+#.b.***ad#
+#.b.***.d#
+##########
+
+7)
+Move * up
+####...###
+#.bb***cc#
+#.b.***ad#
+#.b.....d#
+##########
+
+8)
+Move * up
+####***###
+#.bb***cc#
+#.b....ad#
+#.b.....d#
+##########
+
+9)
+Move * up
+####***###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+10)
+Move * up
+####...###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+Total cost: 12
+Total time: 0.013
+Total number of computed nodes: 150
+Maximum number of nodes in memory: 81
+
+----------------
+Solution:
+1)
+####...###
+#..bb.acc#
+#..b***.d#
+#..b***.d#
+##########
+
+2)
+Move b to the left
+####...###
+#.bb..acc#
+#.b.***.d#
+#.b.***.d#
+##########
+
+3)
+Move * to the left
+####...###
+#.bb..acc#
+#.b***..d#
+#.b***..d#
+##########
+
+4)
+Move a down
+####...###
+#.bb...cc#
+#.b***a.d#
+#.b***..d#
+##########
+
+5)
+Move a to the right
+####...###
+#.bb...cc#
+#.b***.ad#
+#.b***..d#
+##########
+
+6)
+Move * to the right
+####...###
+#.bb...cc#
+#.b.***ad#
+#.b.***.d#
+##########
+
+7)
+Move * up
+####...###
+#.bb***cc#
+#.b.***ad#
+#.b.....d#
+##########
+
+8)
+Move * up
+####***###
+#.bb***cc#
+#.b....ad#
+#.b.....d#
+##########
+
+9)
+Move * up
+####***###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+10)
+Move * up
+####...###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+11)
+Move * up
+####...###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+####...###
+
+Total cost: 13
+Total time: 0.017
+Total number of computed nodes: 189
+Maximum number of nodes in memory: 96
+
+----------------
+Finished
+_________________ End of A* _________________
+
+_________________ Optimized A* Algorithm _________________
+Solution:
+1)
+####...###
+#..bb.acc#
+#..b***.d#
+#..b***.d#
+##########
+
+2)
+Move b to the left
+####...###
+#.bb..acc#
+#.b.***.d#
+#.b.***.d#
+##########
+
+3)
+Move * to the left
+####...###
+#.bb..acc#
+#.b***..d#
+#.b***..d#
+##########
+
+4)
+Move a down
+####...###
+#.bb...cc#
+#.b***a.d#
+#.b***..d#
+##########
+
+5)
+Move a to the right
+####...###
+#.bb...cc#
+#.b***.ad#
+#.b***..d#
+##########
+
+6)
+Move * to the right
+####...###
+#.bb...cc#
+#.b.***ad#
+#.b.***.d#
+##########
+
+7)
+Move * up
+####...###
+#.bb***cc#
+#.b.***ad#
+#.b.....d#
+##########
+
+8)
+Move * up
+####***###
+#.bb***cc#
+#.b....ad#
+#.b.....d#
+##########
+
+9)
+Move * up
+####***###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+10)
+Move * up
+####...###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+Total cost: 12
+Total time: 0.0229
+Total number of computed nodes: 268
+Maximum number of nodes in memory: 150
+
+----------------
+Finished
+_________________ End of Opt A* _________________
+
+_________________ Iterative A* Algorithm _________________
+Solution:
+1)
+####...###
+#..bb.acc#
+#..b***.d#
+#..b***.d#
+##########
+
+2)
+Move b to the left
+####...###
+#.bb..acc#
+#.b.***.d#
+#.b.***.d#
+##########
+
+3)
+Move * to the left
+####...###
+#.bb..acc#
+#.b***..d#
+#.b***..d#
+##########
+
+4)
+Move a down
+####...###
+#.bb...cc#
+#.b***a.d#
+#.b***..d#
+##########
+
+5)
+Move a to the right
+####...###
+#.bb...cc#
+#.b***.ad#
+#.b***..d#
+##########
+
+6)
+Move * to the right
+####...###
+#.bb...cc#
+#.b.***ad#
+#.b.***.d#
+##########
+
+7)
+Move * up
+####...###
+#.bb***cc#
+#.b.***ad#
+#.b.....d#
+##########
+
+8)
+Move * up
+####***###
+#.bb***cc#
+#.b....ad#
+#.b.....d#
+##########
+
+9)
+Move * up
+####***###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+10)
+Move * up
+####...###
+#.bb...cc#
+#.b....ad#
+#.b.....d#
+##########
+
+Total cost: 12
+Total time: 0.0333
+Total number of computed nodes: 44
+Maximum number of nodes in memory: 6
+
+----------------
+Solution:
+1)
+####...###
+#..bb.acc#
+#..b***.d#
+#..b***.d#
+##########
+
+2)
+Move b to the left
+####...###
+#.bb..acc#
+#.b.***.d#
+#.b.***.d#
+##########
+
+3)
+Move * to the left
+####...###
+#.bb..acc#
+#.b***..d#
+#.b***..d#
+##########
+
+4)
+Move a down
+####...###
+#.bb...cc#
+#.b***a.d#
+#.b***..d#
+##########
+
+5)
+Move a to the right
+####...###
+#.bb...cc#
+#.b***.ad#
+#.b***..d#
+##########
+
+6)
+Move * to the right
+####...###
+#.bb...cc#
+#.b.***ad#
+#.b.***.d#
+##########
+
+7)
+Move * up
+####...###
+#.bb***cc#
+#.b.***ad#
+#.b.....d#
+##########
+
+8)
+Move * up
+####***###
+#.bb***cc#
+#.b....ad#
+#.b.....d#
+##########
+
+9)
+Move a down
+####***###
+#.bb***cc#
+#.b.....d#
+#.b....ad#
+##########
+
+10)
+Move * up
+####***###
+#.bb...cc#
+#.b.....d#
+#.b....ad#
+##########
+
+11)
+Move * up
+####...###
+#.bb...cc#
+#.b.....d#
+#.b....ad#
+##########
+
+Total cost: 13
+Total time: 0.165
+Total number of computed nodes: 47
+Maximum number of nodes in memory: 6
+
+----------------
+Solution:
+1)
+####...###
+#..bb.acc#
+#..b***.d#
+#..b***.d#
+##########
+
+2)
+Move b to the left
+####...###
+#.bb..acc#
+#.b.***.d#
+#.b.***.d#
+##########
+
+3)
+Move * to the left
+####...###
+#.bb..acc#
+#.b***..d#
+#.b***..d#
+##########
+
+4)
+Move a down
+####...###
+#.bb...cc#
+#.b***a.d#
+#.b***..d#
+##########
+
+5)
+Move a to the right
+####...###
+#.bb...cc#
+#.b***.ad#
+#.b***..d#
+##########
+
+6)
+Move * to the right
+####...###
+#.bb...cc#
+#.b.***ad#
+#.b.***.d#
+##########
+
+7)
+Move * up
+####...###
+#.bb***cc#
+#.b.***ad#
+#.b.....d#
+##########
+
+8)
+Move * up
+####***###
+#.bb***cc#
+#.b....ad#
+#.b.....d#
+##########
+
+9)
+Move a to the left
+####***###
+#.bb***cc#
+#.b...a.d#
+#.b.....d#
+##########
+
+10)
+Move * up
+####***###
+#.bb...cc#
+#.b...a.d#
+#.b.....d#
+##########
+
+11)
+Move * up
+####...###
+#.bb...cc#
+#.b...a.d#
+#.b.....d#
+##########
+
+Total cost: 13
+Total time: 0.1659
+Total number of computed nodes: 52
+Maximum number of nodes in memory: 9
+
+----------------
+Finished
+_________________ End of IDA* _________________

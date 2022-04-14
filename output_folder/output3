@@ -1,0 +1,3033 @@
+_________________ Breath First Search Algorithm _________________
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move b to the left
+###..##
+#.bb..#
+#a**.c#
+#a**.c#
+#######
+
+4)
+Move b to the left
+###..##
+#bb...#
+#a**.c#
+#a**.c#
+#######
+
+5)
+Move * to the right
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+Total cost: 11
+Total time: 2.8604
+Total number of computed nodes: 54707
+Maximum number of nodes in memory: 40013
+
+----------------
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move b to the left
+###..##
+#.bb..#
+#a**.c#
+#a**.c#
+#######
+
+4)
+Move * to the right
+###..##
+#.bb..#
+#a.**c#
+#a.**c#
+#######
+
+5)
+Move b to the left
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+Total cost: 11
+Total time: 2.9083
+Total number of computed nodes: 55721
+Maximum number of nodes in memory: 40749
+
+----------------
+Finished
+_________________ End of BFS _________________
+
+__________________ Depth First Search Algorithm _________________
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move a up
+###..##
+#a.bb.#
+#a**c.#
+#.**c.#
+#######
+
+3)
+Move c to the right
+###..##
+#a.bb.#
+#a**.c#
+#.**.c#
+#######
+
+4)
+Move a down
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+5)
+Move c up
+###..##
+#..bbc#
+#a**.c#
+#a**..#
+#######
+
+6)
+Move a up
+###..##
+#a.bbc#
+#a**.c#
+#.**..#
+#######
+
+7)
+Move b up
+###bb##
+#a...c#
+#a**.c#
+#.**..#
+#######
+
+8)
+Move a down
+###bb##
+#....c#
+#a**.c#
+#a**..#
+#######
+
+9)
+Move c down
+###bb##
+#.....#
+#a**.c#
+#a**.c#
+#######
+
+10)
+Move a up
+###bb##
+#a....#
+#a**.c#
+#.**.c#
+#######
+
+11)
+Move c to the left
+###bb##
+#a....#
+#a**c.#
+#.**c.#
+#######
+
+12)
+Move a down
+###bb##
+#.....#
+#a**c.#
+#a**c.#
+#######
+
+13)
+Move c up
+###bb##
+#...c.#
+#a**c.#
+#a**..#
+#######
+
+14)
+Move a up
+###bb##
+#a..c.#
+#a**c.#
+#.**..#
+#######
+
+15)
+Move * up
+###bb##
+#a**c.#
+#a**c.#
+#.....#
+#######
+
+16)
+Move a down
+###bb##
+#.**c.#
+#a**c.#
+#a....#
+#######
+
+17)
+Move c to the right
+###bb##
+#.**.c#
+#a**.c#
+#a....#
+#######
+
+18)
+Move a up
+###bb##
+#a**.c#
+#a**.c#
+#.....#
+#######
+
+19)
+Move c down
+###bb##
+#a**..#
+#a**.c#
+#....c#
+#######
+
+20)
+Move a down
+###bb##
+#.**..#
+#a**.c#
+#a...c#
+#######
+
+21)
+Move * to the right
+###bb##
+#..**.#
+#a.**c#
+#a...c#
+#######
+
+22)
+Move a up
+###bb##
+#a.**.#
+#a.**c#
+#....c#
+#######
+
+23)
+Move a to the right
+###bb##
+#.a**.#
+#.a**c#
+#....c#
+#######
+
+24)
+Move a down
+###bb##
+#..**.#
+#.a**c#
+#.a..c#
+#######
+
+25)
+Move c up
+###bb##
+#..**c#
+#.a**c#
+#.a...#
+#######
+
+26)
+Move a up
+###bb##
+#.a**c#
+#.a**c#
+#.....#
+#######
+
+27)
+Move a to the left
+###bb##
+#a.**c#
+#a.**c#
+#.....#
+#######
+
+28)
+Move a down
+###bb##
+#..**c#
+#a.**c#
+#a....#
+#######
+
+29)
+Move * down
+###bb##
+#....c#
+#a.**c#
+#a.**.#
+#######
+
+30)
+Move a up
+###bb##
+#a...c#
+#a.**c#
+#..**.#
+#######
+
+31)
+Move a to the right
+###bb##
+#.a..c#
+#.a**c#
+#..**.#
+#######
+
+32)
+Move a down
+###bb##
+#....c#
+#.a**c#
+#.a**.#
+#######
+
+33)
+Move c down
+###bb##
+#.....#
+#.a**c#
+#.a**c#
+#######
+
+34)
+Move a up
+###bb##
+#.a...#
+#.a**c#
+#..**c#
+#######
+
+35)
+Move a to the left
+###bb##
+#a....#
+#a.**c#
+#..**c#
+#######
+
+36)
+Move a down
+###bb##
+#.....#
+#a.**c#
+#a.**c#
+#######
+
+37)
+Move b down
+###..##
+#..bb.#
+#a.**c#
+#a.**c#
+#######
+
+38)
+Move a up
+###..##
+#a.bb.#
+#a.**c#
+#..**c#
+#######
+
+39)
+Move a to the right
+###..##
+#.abb.#
+#.a**c#
+#..**c#
+#######
+
+40)
+Move a down
+###..##
+#..bb.#
+#.a**c#
+#.a**c#
+#######
+
+41)
+Move c up
+###..##
+#..bbc#
+#.a**c#
+#.a**.#
+#######
+
+42)
+Move a up
+###..##
+#.abbc#
+#.a**c#
+#..**.#
+#######
+
+43)
+Move a to the left
+###..##
+#a.bbc#
+#a.**c#
+#..**.#
+#######
+
+44)
+Move a down
+###..##
+#..bbc#
+#a.**c#
+#a.**.#
+#######
+
+45)
+Move b to the left
+###..##
+#.bb.c#
+#a.**c#
+#a.**.#
+#######
+
+46)
+Move a up
+###..##
+#abb.c#
+#a.**c#
+#..**.#
+#######
+
+47)
+Move c down
+###..##
+#abb..#
+#a.**c#
+#..**c#
+#######
+
+48)
+Move a down
+###..##
+#.bb..#
+#a.**c#
+#a.**c#
+#######
+
+49)
+Move a to the right
+###..##
+#.bb..#
+#.a**c#
+#.a**c#
+#######
+
+50)
+Move c up
+###..##
+#.bb.c#
+#.a**c#
+#.a**.#
+#######
+
+51)
+Move b to the left
+###..##
+#bb..c#
+#.a**c#
+#.a**.#
+#######
+
+52)
+Move a to the left
+###..##
+#bb..c#
+#a.**c#
+#a.**.#
+#######
+
+53)
+Move c down
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+54)
+Move a to the right
+###..##
+#bb...#
+#.a**c#
+#.a**c#
+#######
+
+55)
+Move * up
+###..##
+#bb**.#
+#.a**c#
+#.a..c#
+#######
+
+56)
+Move a to the left
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+57)
+Move c up
+###..##
+#bb**c#
+#a.**c#
+#a....#
+#######
+
+58)
+Move a to the right
+###..##
+#bb**c#
+#.a**c#
+#.a...#
+#######
+
+59)
+Move * up
+###**##
+#bb**c#
+#.a..c#
+#.a...#
+#######
+
+60)
+Move a to the right
+###**##
+#bb**c#
+#..a.c#
+#..a..#
+#######
+
+61)
+Move a to the right
+###**##
+#bb**c#
+#...ac#
+#...a.#
+#######
+
+62)
+Move c down
+###**##
+#bb**.#
+#...ac#
+#...ac#
+#######
+
+63)
+Move a to the left
+###**##
+#bb**.#
+#..a.c#
+#..a.c#
+#######
+
+64)
+Move a to the left
+###**##
+#bb**.#
+#.a..c#
+#.a..c#
+#######
+
+65)
+Move a to the left
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+66)
+Move c up
+###**##
+#bb**c#
+#a...c#
+#a....#
+#######
+
+67)
+Move * up
+###**##
+#bb..c#
+#a...c#
+#a....#
+#######
+
+68)
+Move a to the right
+###**##
+#bb..c#
+#.a..c#
+#.a...#
+#######
+
+69)
+Move a to the right
+###**##
+#bb..c#
+#..a.c#
+#..a..#
+#######
+
+70)
+Move a up
+###**##
+#bba.c#
+#..a.c#
+#.....#
+#######
+
+71)
+Move a to the right
+###**##
+#bb.ac#
+#...ac#
+#.....#
+#######
+
+72)
+Move a down
+###**##
+#bb..c#
+#...ac#
+#...a.#
+#######
+
+73)
+Move c down
+###**##
+#bb...#
+#...ac#
+#...ac#
+#######
+
+74)
+Move a up
+###**##
+#bb.a.#
+#...ac#
+#....c#
+#######
+
+75)
+Move a to the left
+###**##
+#bba..#
+#..a.c#
+#....c#
+#######
+
+76)
+Move a down
+###**##
+#bb...#
+#..a.c#
+#..a.c#
+#######
+
+77)
+Move a to the left
+###**##
+#bb...#
+#.a..c#
+#.a..c#
+#######
+
+78)
+Move a to the left
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+79)
+Move c to the left
+###**##
+#bb...#
+#a..c.#
+#a..c.#
+#######
+
+80)
+Move a to the right
+###**##
+#bb...#
+#.a.c.#
+#.a.c.#
+#######
+
+81)
+Move a to the right
+###**##
+#bb...#
+#..ac.#
+#..ac.#
+#######
+
+82)
+Move a up
+###**##
+#bba..#
+#..ac.#
+#...c.#
+#######
+
+83)
+Move c up
+###**##
+#bbac.#
+#..ac.#
+#.....#
+#######
+
+84)
+Move a down
+###**##
+#bb.c.#
+#..ac.#
+#..a..#
+#######
+
+85)
+Move a to the left
+###**##
+#bb.c.#
+#.a.c.#
+#.a...#
+#######
+
+86)
+Move a to the left
+###**##
+#bb.c.#
+#a..c.#
+#a....#
+#######
+
+87)
+Move c to the left
+###**##
+#bbc..#
+#a.c..#
+#a....#
+#######
+
+88)
+Move a to the right
+###**##
+#bbc..#
+#.ac..#
+#.a...#
+#######
+
+89)
+Move c down
+###**##
+#bb...#
+#.ac..#
+#.ac..#
+#######
+
+90)
+Move a to the left
+###**##
+#bb...#
+#a.c..#
+#a.c..#
+#######
+
+91)
+Move c to the left
+###**##
+#bb...#
+#ac...#
+#ac...#
+#######
+
+92)
+Move b to the right
+###**##
+#.bb..#
+#ac...#
+#ac...#
+#######
+
+93)
+Move a up
+###**##
+#abb..#
+#ac...#
+#.c...#
+#######
+
+94)
+Move c to the right
+###**##
+#abb..#
+#a.c..#
+#..c..#
+#######
+
+95)
+Move a down
+###**##
+#.bb..#
+#a.c..#
+#a.c..#
+#######
+
+96)
+Move a to the right
+###**##
+#.bb..#
+#.ac..#
+#.ac..#
+#######
+
+97)
+Move c to the right
+###**##
+#.bb..#
+#.a.c.#
+#.a.c.#
+#######
+
+98)
+Move a to the right
+###**##
+#.bb..#
+#..ac.#
+#..ac.#
+#######
+
+99)
+Move c up
+###**##
+#.bbc.#
+#..ac.#
+#..a..#
+#######
+
+100)
+Move a to the left
+###**##
+#.bbc.#
+#.a.c.#
+#.a...#
+#######
+
+101)
+Move a to the left
+###**##
+#.bbc.#
+#a..c.#
+#a....#
+#######
+
+102)
+Move a up
+###**##
+#abbc.#
+#a..c.#
+#.....#
+#######
+
+103)
+Move c to the right
+###**##
+#abb.c#
+#a...c#
+#.....#
+#######
+
+104)
+Move a down
+###**##
+#.bb.c#
+#a...c#
+#a....#
+#######
+
+105)
+Move a to the right
+###**##
+#.bb.c#
+#.a..c#
+#.a...#
+#######
+
+106)
+Move a to the right
+###**##
+#.bb.c#
+#..a.c#
+#..a..#
+#######
+
+107)
+Move a to the right
+###**##
+#.bb.c#
+#...ac#
+#...a.#
+#######
+
+108)
+Move a up
+###**##
+#.bbac#
+#...ac#
+#.....#
+#######
+
+109)
+Move c down
+###**##
+#.bba.#
+#...ac#
+#....c#
+#######
+
+110)
+Move a down
+###**##
+#.bb..#
+#...ac#
+#...ac#
+#######
+
+111)
+Move a to the left
+###**##
+#.bb..#
+#..a.c#
+#..a.c#
+#######
+
+112)
+Move a to the left
+###**##
+#.bb..#
+#.a..c#
+#.a..c#
+#######
+
+113)
+Move a to the left
+###**##
+#.bb..#
+#a...c#
+#a...c#
+#######
+
+114)
+Move a up
+###**##
+#abb..#
+#a...c#
+#....c#
+#######
+
+115)
+Move c to the left
+###**##
+#abb..#
+#a..c.#
+#...c.#
+#######
+
+116)
+Move a down
+###**##
+#.bb..#
+#a..c.#
+#a..c.#
+#######
+
+117)
+Move b to the right
+###**##
+#..bb.#
+#a..c.#
+#a..c.#
+#######
+
+118)
+Move a up
+###**##
+#a.bb.#
+#a..c.#
+#...c.#
+#######
+
+119)
+Move a to the right
+###**##
+#.abb.#
+#.a.c.#
+#...c.#
+#######
+
+120)
+Move a down
+###**##
+#..bb.#
+#.a.c.#
+#.a.c.#
+#######
+
+121)
+Move a to the right
+###**##
+#..bb.#
+#..ac.#
+#..ac.#
+#######
+
+122)
+Move c to the right
+###**##
+#..bb.#
+#..a.c#
+#..a.c#
+#######
+
+123)
+Move a to the right
+###**##
+#..bb.#
+#...ac#
+#...ac#
+#######
+
+124)
+Move c up
+###**##
+#..bbc#
+#...ac#
+#...a.#
+#######
+
+125)
+Move a to the left
+###**##
+#..bbc#
+#..a.c#
+#..a..#
+#######
+
+126)
+Move a to the left
+###**##
+#..bbc#
+#.a..c#
+#.a...#
+#######
+
+127)
+Move a up
+###**##
+#.abbc#
+#.a..c#
+#.....#
+#######
+
+128)
+Move a to the left
+###**##
+#a.bbc#
+#a...c#
+#.....#
+#######
+
+129)
+Move a down
+###**##
+#..bbc#
+#a...c#
+#a....#
+#######
+
+130)
+Move c down
+###**##
+#..bb.#
+#a...c#
+#a...c#
+#######
+
+131)
+Move a up
+###**##
+#a.bb.#
+#a...c#
+#....c#
+#######
+
+132)
+Move a to the right
+###**##
+#.abb.#
+#.a..c#
+#....c#
+#######
+
+133)
+Move a down
+###**##
+#..bb.#
+#.a..c#
+#.a..c#
+#######
+
+134)
+Move b to the right
+###**##
+#...bb#
+#.a..c#
+#.a..c#
+#######
+
+135)
+Move a up
+###**##
+#.a.bb#
+#.a..c#
+#....c#
+#######
+
+136)
+Move a to the right
+###**##
+#..abb#
+#..a.c#
+#....c#
+#######
+
+137)
+Move a down
+###**##
+#...bb#
+#..a.c#
+#..a.c#
+#######
+
+138)
+Move a to the right
+###**##
+#...bb#
+#...ac#
+#...ac#
+#######
+
+139)
+Move * up
+###..##
+#...bb#
+#...ac#
+#...ac#
+#######
+
+Total cost: 269
+Total time: 0.0285
+Total number of computed nodes: 470
+Maximum number of nodes in memory: 143
+
+----------------
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move a up
+###..##
+#a.bb.#
+#a**c.#
+#.**c.#
+#######
+
+3)
+Move c to the right
+###..##
+#a.bb.#
+#a**.c#
+#.**.c#
+#######
+
+4)
+Move a down
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+5)
+Move c up
+###..##
+#..bbc#
+#a**.c#
+#a**..#
+#######
+
+6)
+Move a up
+###..##
+#a.bbc#
+#a**.c#
+#.**..#
+#######
+
+7)
+Move b up
+###bb##
+#a...c#
+#a**.c#
+#.**..#
+#######
+
+8)
+Move a down
+###bb##
+#....c#
+#a**.c#
+#a**..#
+#######
+
+9)
+Move c down
+###bb##
+#.....#
+#a**.c#
+#a**.c#
+#######
+
+10)
+Move a up
+###bb##
+#a....#
+#a**.c#
+#.**.c#
+#######
+
+11)
+Move c to the left
+###bb##
+#a....#
+#a**c.#
+#.**c.#
+#######
+
+12)
+Move a down
+###bb##
+#.....#
+#a**c.#
+#a**c.#
+#######
+
+13)
+Move c up
+###bb##
+#...c.#
+#a**c.#
+#a**..#
+#######
+
+14)
+Move a up
+###bb##
+#a..c.#
+#a**c.#
+#.**..#
+#######
+
+15)
+Move * up
+###bb##
+#a**c.#
+#a**c.#
+#.....#
+#######
+
+16)
+Move a down
+###bb##
+#.**c.#
+#a**c.#
+#a....#
+#######
+
+17)
+Move c to the right
+###bb##
+#.**.c#
+#a**.c#
+#a....#
+#######
+
+18)
+Move a up
+###bb##
+#a**.c#
+#a**.c#
+#.....#
+#######
+
+19)
+Move c down
+###bb##
+#a**..#
+#a**.c#
+#....c#
+#######
+
+20)
+Move a down
+###bb##
+#.**..#
+#a**.c#
+#a...c#
+#######
+
+21)
+Move * to the right
+###bb##
+#..**.#
+#a.**c#
+#a...c#
+#######
+
+22)
+Move a up
+###bb##
+#a.**.#
+#a.**c#
+#....c#
+#######
+
+23)
+Move a to the right
+###bb##
+#.a**.#
+#.a**c#
+#....c#
+#######
+
+24)
+Move a down
+###bb##
+#..**.#
+#.a**c#
+#.a..c#
+#######
+
+25)
+Move c up
+###bb##
+#..**c#
+#.a**c#
+#.a...#
+#######
+
+26)
+Move a up
+###bb##
+#.a**c#
+#.a**c#
+#.....#
+#######
+
+27)
+Move a to the left
+###bb##
+#a.**c#
+#a.**c#
+#.....#
+#######
+
+28)
+Move a down
+###bb##
+#..**c#
+#a.**c#
+#a....#
+#######
+
+29)
+Move * down
+###bb##
+#....c#
+#a.**c#
+#a.**.#
+#######
+
+30)
+Move a up
+###bb##
+#a...c#
+#a.**c#
+#..**.#
+#######
+
+31)
+Move a to the right
+###bb##
+#.a..c#
+#.a**c#
+#..**.#
+#######
+
+32)
+Move a down
+###bb##
+#....c#
+#.a**c#
+#.a**.#
+#######
+
+33)
+Move c down
+###bb##
+#.....#
+#.a**c#
+#.a**c#
+#######
+
+34)
+Move a up
+###bb##
+#.a...#
+#.a**c#
+#..**c#
+#######
+
+35)
+Move a to the left
+###bb##
+#a....#
+#a.**c#
+#..**c#
+#######
+
+36)
+Move a down
+###bb##
+#.....#
+#a.**c#
+#a.**c#
+#######
+
+37)
+Move b down
+###..##
+#..bb.#
+#a.**c#
+#a.**c#
+#######
+
+38)
+Move a up
+###..##
+#a.bb.#
+#a.**c#
+#..**c#
+#######
+
+39)
+Move a to the right
+###..##
+#.abb.#
+#.a**c#
+#..**c#
+#######
+
+40)
+Move a down
+###..##
+#..bb.#
+#.a**c#
+#.a**c#
+#######
+
+41)
+Move c up
+###..##
+#..bbc#
+#.a**c#
+#.a**.#
+#######
+
+42)
+Move a up
+###..##
+#.abbc#
+#.a**c#
+#..**.#
+#######
+
+43)
+Move a to the left
+###..##
+#a.bbc#
+#a.**c#
+#..**.#
+#######
+
+44)
+Move a down
+###..##
+#..bbc#
+#a.**c#
+#a.**.#
+#######
+
+45)
+Move b to the left
+###..##
+#.bb.c#
+#a.**c#
+#a.**.#
+#######
+
+46)
+Move a up
+###..##
+#abb.c#
+#a.**c#
+#..**.#
+#######
+
+47)
+Move c down
+###..##
+#abb..#
+#a.**c#
+#..**c#
+#######
+
+48)
+Move a down
+###..##
+#.bb..#
+#a.**c#
+#a.**c#
+#######
+
+49)
+Move a to the right
+###..##
+#.bb..#
+#.a**c#
+#.a**c#
+#######
+
+50)
+Move c up
+###..##
+#.bb.c#
+#.a**c#
+#.a**.#
+#######
+
+51)
+Move b to the left
+###..##
+#bb..c#
+#.a**c#
+#.a**.#
+#######
+
+52)
+Move a to the left
+###..##
+#bb..c#
+#a.**c#
+#a.**.#
+#######
+
+53)
+Move c down
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+54)
+Move a to the right
+###..##
+#bb...#
+#.a**c#
+#.a**c#
+#######
+
+55)
+Move * up
+###..##
+#bb**.#
+#.a**c#
+#.a..c#
+#######
+
+56)
+Move a to the left
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+57)
+Move c up
+###..##
+#bb**c#
+#a.**c#
+#a....#
+#######
+
+58)
+Move a to the right
+###..##
+#bb**c#
+#.a**c#
+#.a...#
+#######
+
+59)
+Move * up
+###**##
+#bb**c#
+#.a..c#
+#.a...#
+#######
+
+60)
+Move a to the right
+###**##
+#bb**c#
+#..a.c#
+#..a..#
+#######
+
+61)
+Move a to the right
+###**##
+#bb**c#
+#...ac#
+#...a.#
+#######
+
+62)
+Move c down
+###**##
+#bb**.#
+#...ac#
+#...ac#
+#######
+
+63)
+Move a to the left
+###**##
+#bb**.#
+#..a.c#
+#..a.c#
+#######
+
+64)
+Move a to the left
+###**##
+#bb**.#
+#.a..c#
+#.a..c#
+#######
+
+65)
+Move a to the left
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+66)
+Move c up
+###**##
+#bb**c#
+#a...c#
+#a....#
+#######
+
+67)
+Move * up
+###**##
+#bb..c#
+#a...c#
+#a....#
+#######
+
+68)
+Move a to the right
+###**##
+#bb..c#
+#.a..c#
+#.a...#
+#######
+
+69)
+Move a to the right
+###**##
+#bb..c#
+#..a.c#
+#..a..#
+#######
+
+70)
+Move a up
+###**##
+#bba.c#
+#..a.c#
+#.....#
+#######
+
+71)
+Move a to the right
+###**##
+#bb.ac#
+#...ac#
+#.....#
+#######
+
+72)
+Move a down
+###**##
+#bb..c#
+#...ac#
+#...a.#
+#######
+
+73)
+Move c down
+###**##
+#bb...#
+#...ac#
+#...ac#
+#######
+
+74)
+Move a up
+###**##
+#bb.a.#
+#...ac#
+#....c#
+#######
+
+75)
+Move a to the left
+###**##
+#bba..#
+#..a.c#
+#....c#
+#######
+
+76)
+Move a down
+###**##
+#bb...#
+#..a.c#
+#..a.c#
+#######
+
+77)
+Move a to the left
+###**##
+#bb...#
+#.a..c#
+#.a..c#
+#######
+
+78)
+Move a to the left
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+79)
+Move c to the left
+###**##
+#bb...#
+#a..c.#
+#a..c.#
+#######
+
+80)
+Move a to the right
+###**##
+#bb...#
+#.a.c.#
+#.a.c.#
+#######
+
+81)
+Move a to the right
+###**##
+#bb...#
+#..ac.#
+#..ac.#
+#######
+
+82)
+Move a up
+###**##
+#bba..#
+#..ac.#
+#...c.#
+#######
+
+83)
+Move c up
+###**##
+#bbac.#
+#..ac.#
+#.....#
+#######
+
+84)
+Move a down
+###**##
+#bb.c.#
+#..ac.#
+#..a..#
+#######
+
+85)
+Move a to the left
+###**##
+#bb.c.#
+#.a.c.#
+#.a...#
+#######
+
+86)
+Move a to the left
+###**##
+#bb.c.#
+#a..c.#
+#a....#
+#######
+
+87)
+Move c to the left
+###**##
+#bbc..#
+#a.c..#
+#a....#
+#######
+
+88)
+Move a to the right
+###**##
+#bbc..#
+#.ac..#
+#.a...#
+#######
+
+89)
+Move c down
+###**##
+#bb...#
+#.ac..#
+#.ac..#
+#######
+
+90)
+Move a to the left
+###**##
+#bb...#
+#a.c..#
+#a.c..#
+#######
+
+91)
+Move c to the left
+###**##
+#bb...#
+#ac...#
+#ac...#
+#######
+
+92)
+Move b to the right
+###**##
+#.bb..#
+#ac...#
+#ac...#
+#######
+
+93)
+Move a up
+###**##
+#abb..#
+#ac...#
+#.c...#
+#######
+
+94)
+Move c to the right
+###**##
+#abb..#
+#a.c..#
+#..c..#
+#######
+
+95)
+Move a down
+###**##
+#.bb..#
+#a.c..#
+#a.c..#
+#######
+
+96)
+Move a to the right
+###**##
+#.bb..#
+#.ac..#
+#.ac..#
+#######
+
+97)
+Move c to the right
+###**##
+#.bb..#
+#.a.c.#
+#.a.c.#
+#######
+
+98)
+Move a to the right
+###**##
+#.bb..#
+#..ac.#
+#..ac.#
+#######
+
+99)
+Move c up
+###**##
+#.bbc.#
+#..ac.#
+#..a..#
+#######
+
+100)
+Move a to the left
+###**##
+#.bbc.#
+#.a.c.#
+#.a...#
+#######
+
+101)
+Move a to the left
+###**##
+#.bbc.#
+#a..c.#
+#a....#
+#######
+
+102)
+Move a up
+###**##
+#abbc.#
+#a..c.#
+#.....#
+#######
+
+103)
+Move c to the right
+###**##
+#abb.c#
+#a...c#
+#.....#
+#######
+
+104)
+Move a down
+###**##
+#.bb.c#
+#a...c#
+#a....#
+#######
+
+105)
+Move a to the right
+###**##
+#.bb.c#
+#.a..c#
+#.a...#
+#######
+
+106)
+Move a to the right
+###**##
+#.bb.c#
+#..a.c#
+#..a..#
+#######
+
+107)
+Move a to the right
+###**##
+#.bb.c#
+#...ac#
+#...a.#
+#######
+
+108)
+Move a up
+###**##
+#.bbac#
+#...ac#
+#.....#
+#######
+
+109)
+Move c down
+###**##
+#.bba.#
+#...ac#
+#....c#
+#######
+
+110)
+Move a down
+###**##
+#.bb..#
+#...ac#
+#...ac#
+#######
+
+111)
+Move a to the left
+###**##
+#.bb..#
+#..a.c#
+#..a.c#
+#######
+
+112)
+Move a to the left
+###**##
+#.bb..#
+#.a..c#
+#.a..c#
+#######
+
+113)
+Move a to the left
+###**##
+#.bb..#
+#a...c#
+#a...c#
+#######
+
+114)
+Move a up
+###**##
+#abb..#
+#a...c#
+#....c#
+#######
+
+115)
+Move c to the left
+###**##
+#abb..#
+#a..c.#
+#...c.#
+#######
+
+116)
+Move a down
+###**##
+#.bb..#
+#a..c.#
+#a..c.#
+#######
+
+117)
+Move b to the right
+###**##
+#..bb.#
+#a..c.#
+#a..c.#
+#######
+
+118)
+Move a up
+###**##
+#a.bb.#
+#a..c.#
+#...c.#
+#######
+
+119)
+Move a to the right
+###**##
+#.abb.#
+#.a.c.#
+#...c.#
+#######
+
+120)
+Move a down
+###**##
+#..bb.#
+#.a.c.#
+#.a.c.#
+#######
+
+121)
+Move a to the right
+###**##
+#..bb.#
+#..ac.#
+#..ac.#
+#######
+
+122)
+Move c to the right
+###**##
+#..bb.#
+#..a.c#
+#..a.c#
+#######
+
+123)
+Move a to the right
+###**##
+#..bb.#
+#...ac#
+#...ac#
+#######
+
+124)
+Move c up
+###**##
+#..bbc#
+#...ac#
+#...a.#
+#######
+
+125)
+Move a to the left
+###**##
+#..bbc#
+#..a.c#
+#..a..#
+#######
+
+126)
+Move a to the left
+###**##
+#..bbc#
+#.a..c#
+#.a...#
+#######
+
+127)
+Move a up
+###**##
+#.abbc#
+#.a..c#
+#.....#
+#######
+
+128)
+Move a to the left
+###**##
+#a.bbc#
+#a...c#
+#.....#
+#######
+
+129)
+Move a down
+###**##
+#..bbc#
+#a...c#
+#a....#
+#######
+
+130)
+Move c down
+###**##
+#..bb.#
+#a...c#
+#a...c#
+#######
+
+131)
+Move a up
+###**##
+#a.bb.#
+#a...c#
+#....c#
+#######
+
+132)
+Move a to the right
+###**##
+#.abb.#
+#.a..c#
+#....c#
+#######
+
+133)
+Move a down
+###**##
+#..bb.#
+#.a..c#
+#.a..c#
+#######
+
+134)
+Move b to the right
+###**##
+#...bb#
+#.a..c#
+#.a..c#
+#######
+
+135)
+Move a up
+###**##
+#.a.bb#
+#.a..c#
+#....c#
+#######
+
+136)
+Move a to the right
+###**##
+#..abb#
+#..a.c#
+#....c#
+#######
+
+137)
+Move a down
+###**##
+#...bb#
+#..a.c#
+#..a.c#
+#######
+
+138)
+Move c to the left
+###**##
+#...bb#
+#..ac.#
+#..ac.#
+#######
+
+139)
+Move a up
+###**##
+#..abb#
+#..ac.#
+#...c.#
+#######
+
+140)
+Move a to the left
+###**##
+#.a.bb#
+#.a.c.#
+#...c.#
+#######
+
+141)
+Move a down
+###**##
+#...bb#
+#.a.c.#
+#.a.c.#
+#######
+
+142)
+Move a to the left
+###**##
+#...bb#
+#a..c.#
+#a..c.#
+#######
+
+143)
+Move a up
+###**##
+#a..bb#
+#a..c.#
+#...c.#
+#######
+
+144)
+Move c to the right
+###**##
+#a..bb#
+#a...c#
+#....c#
+#######
+
+145)
+Move a down
+###**##
+#...bb#
+#a...c#
+#a...c#
+#######
+
+146)
+Move * up
+###..##
+#...bb#
+#a...c#
+#a...c#
+#######
+
+Total cost: 283
+Total time: 0.0314
+Total number of computed nodes: 491
+Maximum number of nodes in memory: 150
+
+----------------
+Finished
+_________________ End of DFS _________________
+
+_________________ Iterative Depth First Search Algorithm _________________
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move b to the left
+###..##
+#.bb..#
+#a**.c#
+#a**.c#
+#######
+
+4)
+Move b to the left
+###..##
+#bb...#
+#a**.c#
+#a**.c#
+#######
+
+5)
+Move * to the right
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+Total cost: 11
+Total time: 3.1889
+Total number of computed nodes: 45
+Maximum number of nodes in memory: 1
+
+----------------
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move b to the left
+###..##
+#.bb..#
+#a**.c#
+#a**.c#
+#######
+
+4)
+Move * to the right
+###..##
+#.bb..#
+#a.**c#
+#a.**c#
+#######
+
+5)
+Move b to the left
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+Total cost: 11
+Total time: 3.2488
+Total number of computed nodes: 47
+Maximum number of nodes in memory: 1
+
+----------------
+Finished
+_________________ End of IDFS _________________
+
+_________________ A* Algorithm _________________
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move * to the right
+###..##
+#..bb.#
+#a.**c#
+#a.**c#
+#######
+
+4)
+Move b to the left
+###..##
+#.bb..#
+#a.**c#
+#a.**c#
+#######
+
+5)
+Move b to the left
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+Total cost: 11
+Total time: 0.016
+Total number of computed nodes: 142
+Maximum number of nodes in memory: 55
+
+----------------
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move * to the right
+###..##
+#..bb.#
+#a.**c#
+#a.**c#
+#######
+
+4)
+Move b to the left
+###..##
+#.bb..#
+#a.**c#
+#a.**c#
+#######
+
+5)
+Move b to the left
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+10)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+###..##
+
+Total cost: 12
+Total time: 0.017
+Total number of computed nodes: 147
+Maximum number of nodes in memory: 59
+
+----------------
+Finished
+_________________ End of A* _________________
+
+_________________ Optimized A* Algorithm _________________
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move * to the right
+###..##
+#..bb.#
+#a.**c#
+#a.**c#
+#######
+
+4)
+Move b to the left
+###..##
+#.bb..#
+#a.**c#
+#a.**c#
+#######
+
+5)
+Move b to the left
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+Total cost: 11
+Total time: 0.011
+Total number of computed nodes: 148
+Maximum number of nodes in memory: 80
+
+----------------
+Finished
+_________________ End of Opt A* _________________
+
+_________________ Iterative A* Algorithm _________________
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move b to the left
+###..##
+#.bb..#
+#a**.c#
+#a**.c#
+#######
+
+4)
+Move b to the left
+###..##
+#bb...#
+#a**.c#
+#a**.c#
+#######
+
+5)
+Move * to the right
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+Total cost: 11
+Total time: 0.0465
+Total number of computed nodes: 36
+Maximum number of nodes in memory: 6
+
+----------------
+Solution:
+1)
+###..##
+#..bb.#
+#a**c.#
+#a**c.#
+#######
+
+2)
+Move c to the right
+###..##
+#..bb.#
+#a**.c#
+#a**.c#
+#######
+
+3)
+Move b to the left
+###..##
+#.bb..#
+#a**.c#
+#a**.c#
+#######
+
+4)
+Move b to the left
+###..##
+#bb...#
+#a**.c#
+#a**.c#
+#######
+
+5)
+Move * to the right
+###..##
+#bb...#
+#a.**c#
+#a.**c#
+#######
+
+6)
+Move * up
+###..##
+#bb**.#
+#a.**c#
+#a...c#
+#######
+
+7)
+Move * up
+###**##
+#bb**.#
+#a...c#
+#a...c#
+#######
+
+8)
+Move * up
+###**##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+9)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+#######
+
+10)
+Move * up
+###..##
+#bb...#
+#a...c#
+#a...c#
+###..##
+
+Total cost: 12
+Total time: 0.0475
+Total number of computed nodes: 41
+Maximum number of nodes in memory: 6
+
+----------------
+Finished
+_________________ End of IDA* _________________
