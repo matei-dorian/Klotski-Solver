@@ -92,7 +92,7 @@ Some of the code optimizations made to acheive better performances:
 ### **Time complexities**:
 * comparing 2 nodes: $O(1)$
 * checking if the node was already visited, printing the path: $O(L)$ - where L is the length of the path
-* finding the coordinates of the special_piece: $O(BoardWidth^2)$ for the first node, $O(1)$ in other cases
+* finding the coordinates of the special_piece: $O(BoardWidth^2)$ for the first node, $`O(1)`$ in other cases
 * final state test $O(1)$
 * first heuristic $O(1)$, second $O(SpecialPieceWidth)$, third heuristic $O(BoardWidth^2)$, last $O()$
 * generating successors $O(k * N^2)$ - where k is the number of pieces that can be moved and N is the size of the board 
