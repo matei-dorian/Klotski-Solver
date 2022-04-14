@@ -21,3 +21,23 @@ The original Klotski puzzle consisted of 10 blocks and can be solve in a minimum
      style = "position: relative; margin: 15px 1em 0px 1em"/>
 
 # Problem representation
+
+### **Encoding**:
+In order to memorize a board we need to encode the configuration:
+1. '#' - border of the current state
+2. '.' - free space in the board
+3. '*' - part of the special piece
+4. 'a'-'z' or 'A'-'Z' for other pieces
+
+Each board configuration is stored in the memory via the SearchNode class.
+
+### **Rules**:
+* The puzzle has an exit at the top of the board which fits perfectly with the special piece
+* Each piece can be moved one step at a time, in any of the 4 directions (top, right, down left) only if it has enoguh free space to move there
+* Each piece has to be moved entirely (you cannot break the piece and move only parts of it)
+* Only the special piece can exit the puzzle through the exit at the top
+* The cost of each move is equal to the size of the pieced move (except the special piece which always has a cost of 1)
+* The puzzle is considered solved when the special piece is no longer on the board
+
+### **Solving the problem**:
+In order to solve this problem we will represent each set of moves as a path in a graph, using the Graph class. We will try to build this path step by step using diffrent searching algorithms.
