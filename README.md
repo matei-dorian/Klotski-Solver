@@ -79,11 +79,11 @@ The A* algorithm needs an heuristic function that will aproximate the number of 
 
 3. Admissible heuristic 2: This heuristic estimates the number of moves by annalyzing each set of L columns on the board (where L is the width of the special piece). For each set of columns, the function calculates the cost of getting to that position, then all the way up to the first row and then to the exit. If in this path the special piece colides with an obstacle, the cost of moving the obstacle is added as well and the obstacle is removed. Lastly, the function returns the path with the minimum value. This heuristic is admissible because it bassically analyzes every path that the special piece can take. If an obstacle is in the way we only add it's cost once, but in reality the cost can be only equal or greater because we might need to move more pieces in order to free that path. 
 
-4. Non-admissible heuristic:
+4. Non-admissible heuristic: This takes the first heuristic h1(x) and returns 2 * h(x) + 1. This heuristic assumes a worse case scenario where every cell in the path is blocked by an obstacle of cost 1. It is clear that this formula overstimates the number of steps, especially for baords with fewer obstacles, thus this heuristic is not admissible.
 
 # Code optimizations
 Some of the code optimizations made to acheive better performances:
-* At diffrent points in the algorithm we need the exact coordinates of the special piece. Every SearchNode object memorizes these coordinates in order to respond in $O(1)$ to this request
+* At diffrent points in the algorithm we need the exact coordinates of the special piece. Every SearchNode object memorizes these coordinates in order to respond in **O(1)** to this request
 * From the same reason, the Graph class memorizes the coordinates of the exit as well as a dictionary of obstacles, where the key is the letter representing the piece and the value is the cost of moving it
 * If the input is already in a final state or if it doesn't have any solutions, a message will be printed out instead of running the algorithms
 * Overloading the `__eq__` method helps comparing the SearchNode objects faster
@@ -91,11 +91,11 @@ Some of the code optimizations made to acheive better performances:
 
 ### **Time complexities**:
 * comparing 2 nodes: $O(1)$
-* checking if the node was already visited, printing the path: $O(L)$ - where L is the length of the path
-* finding the coordinates of the special_piece: $O(BoardWidth^2)$ for the first node, $`O(1)`$ in other cases
-* final state test $O(1)$
-* first heuristic $O(1)$, second $O(SpecialPieceWidth)$, third heuristic $O(BoardWidth^2)$, last $O()$
-* generating successors $O(k * N^2)$ - where k is the number of pieces that can be moved and N is the size of the board 
+* checking if the node was already visited, printing the path: **O(L)** - where L is the length of the path
+* finding the coordinates of the special_piece: **O(BoardWidth^2)** for the first node, **O(1)** in other cases
+* final state test **O(1)**
+* first heuristic **O(1)**, second **O(SpecialPieceWidth)**, third heuristic **O(BoardWidth^2)**, last **O(SpecialPieceWidth)**
+* generating successors **O(k * N^2)** - where k is the number of pieces that can be moved and N is the size of the board 
 
 # Algorithm comparasion
 The following table summarizes the results and performances of each searching algorithm on the 4 input files provided.
