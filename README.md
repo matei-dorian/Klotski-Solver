@@ -98,6 +98,7 @@ Some of the code optimizations made to acheive better performances:
 
 # Algorithm comparasion
 The following table summarizes the results and performances of each searching algorithm on the 4 input files provided.
+For all the algorithms 2 diffrent paths are required, and the timeout is 5 seconds.
 
 
 # Running the program
