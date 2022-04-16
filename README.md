@@ -100,6 +100,54 @@ Some of the code optimizations made to acheive better performances:
 The following table summarizes the results and performances of each searching algorithm on the 4 input files provided.
 For all the algorithms 2 diffrent paths are required, and the timeout is 5 seconds.
 
+#### BFS
+| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           | 9           | 11          | 1.2836      | 26574       | 36315       | 1           |
+| 3           | 9           | 11          | 1.3065      | 27068       | 36999       | 2           |
+| 4           | -           | -           | TLE (>5)    | -           | -           | 1           |
+| 4           | -           | -           | TLE (>5)    | -           | -           | 2           |
+
+#### DFS
+| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           | 244         | 475         | 0.0469      | 248         | 931         | 1           |
+| 3           | 246         | 479         | 0.0499      | 250         | 935         | 2           |
+| 4           | 987         | 2137        | 0.4668      | 4821        | 981         | 1           |
+| 4           | 986         | 2135        | 0.4748      | 4822        | 990         | 2           |
+
+#### IDFS
+| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           | 9           | 11          | 1.2836      | 26574       | 36315       | 1           |
+| 3           | 9           | 11          | 1.3065      | 27068       | 36999       | 2           |
+| 4           |             |             |             |             |             | 1           |
+| 4           |             |             |             |             |             | 2           |
+
+#### A*
+| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           |             |             |             |             |             |             |
+| 3           |             |             |             |             |             |             |
+| 4           |             |             |             |             |             |             |
+| 4           |             |             |             |             |             |             |
+
+#### A* OPT
+| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           |             |             |             |             |             |             |
+| 3           |             |             |             |             |             |             |
+| 4           |             |             |             |             |             |             |
+| 4           |             |             |             |             |             |             |
+
+#### IDA*
+| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           |             |             |             |             |             |             |
+| 3           |             |             |             |             |             |             |
+| 4           |             |             |             |             |             |             |
+| 4           |             |             |             |             |             |             |
+
 
 # Running the program
 In order to run the program you need to provide all the needed arguments:
