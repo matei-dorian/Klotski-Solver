@@ -85,6 +85,7 @@ The A* algorithm needs an heuristic function that will aproximate the number of 
 Some of the code optimizations made to acheive better performances:
 * At diffrent points in the algorithm we need the exact coordinates of the special piece. Every SearchNode object memorizes these coordinates in order to respond in **O(1)** to this request
 * From the same reason, the Graph class memorizes the coordinates of the exit as well as a dictionary of obstacles, where the key is the letter representing the piece and the value is the cost of moving it
+* oerwrotten ```__eq__``` and ```__hash__``` in SearchNode class to improve the speed of comparison between nodes
 * If the input is already in a final state or if it doesn't have any solutions, a message will be printed out instead of running the algorithms
 * Used diffrent data structures (such as `Queue` and `PriorityQueue`) to get a better performance out of the searching algorithms
 
@@ -121,32 +122,62 @@ For all the algorithms 2 diffrent paths are required, and the timeout is 5 secon
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | 3           | 9           | 11          | 1.2836      | 26574       | 36315       | 1           |
 | 3           | 9           | 11          | 1.3065      | 27068       | 36999       | 2           |
-| 4           |             |             |             |             |             | 1           |
-| 4           |             |             |             |             |             | 2           |
+| 4           | -           | -           | TLE (>5)    | -           | -           | 1           |
+| 4           | -           | -           | TLE (>5)    | -           | -           | 2           |
 
 #### A*
-| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 3           |             |             |             |             |             |             |
-| 3           |             |             |             |             |             |             |
-| 4           |             |             |             |             |             |             |
-| 4           |             |             |             |             |             |             |
+| Input file  | Lenght      |   Cost      | Time (s)    | Heuristic   |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           | 9           | 11          | 0.0209      | trivial     | 78          | 522         | 1           |
+| 3           | 10          | 12          | 0.0269      | trivial     | 90          | 663         | 2           |
+| 4           | 10          | 12          | 0.0918      | trivial     | 331         | 1657        | 1           |
+| 4           | 11          | 13          | 0.1486      | trivial     | 440         | 2353        | 2           |
+| 3           | 9           | 11          | 0.012       | admissible1 | 58          | 308         | 1           |
+| 3           | 10          | 13          | 0.012       | admissible1 | 61          | 313         | 2           |
+| 4           | 10          | 12          | 0.0269      | admissible1 | 151         | 539         | 1           |
+| 4           | 11          | 13          | 0.0279      | admissible1 | 156         | 545         | 2           |
+| 3           | 9           | 11          | 0.008       | admissible2 | 51          | 150         | 1           |
+| 3           | 10          | 12          | 0.008       | admissible2 | 55          | 155         | 2           |
+| 4           | 10          | 12          | 0.009       | admissible2 | 76          | 142         | 1           |
+| 4           | 11          | 13          | 0.012       | admissible2 | 97          | 189         | 2           |
+| 3           | 9           | 11          | 0.007       | non-adm     | 49          | 176         | 1           |
+| 3           | 10          | 13          | 0.007       | non-adm     | 53          | 181         | 2           |
+| 4           | 10          | 12          | 0.0249      | non-adm     | 145         | 542         | 1           |
+| 4           | 11          | 13          | 0.0249      | non-adm     | 150         | 548         | 2           |
+
+
 
 #### A* OPT
-| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 3           |             |             |             |             |             |             |
-| 3           |             |             |             |             |             |             |
-| 4           |             |             |             |             |             |             |
-| 4           |             |             |             |             |             |             |
+| Input file  | Lenght      |   Cost      | Time (s)    | Heuristic   |  MemMax     |  NMax       | 
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | 
+| 3           | 9           | 11          | 0.013       | trivial     | 107         | 321         | 
+| 4           | 10          | 12          | 0.0598      | trivial     | 385         | 978         | 
+| 3           | 9           | 11          | 0.009       | admissible1 | 92          | 218         |
+| 4           | 10          | 12          | 0.018       | admissible1 | 196         | 358         |
+| 3           | 9           | 11          | 0.007       | admissible2 | 81          | 139         |
+| 4           | 10          | 12          |             | admissible2 | 106         | 136         |
+| 3           | 9           | 11          | 0.004       | non-adm     | 70          | 120         |
+| 4           | 10          | 12          | 0.014       | non-adm     | 178         | 321         |
 
 #### IDA*
-| Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 3           |             |             |             |             |             |             |
-| 3           |             |             |             |             |             |             |
-| 4           |             |             |             |             |             |             |
-| 4           |             |             |             |             |             |             |
+| Input file  | Lenght      |   Cost      | Time (s)    | Heuristic   |  MemMax     |  NMax       |   Sol Idx   |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| 3           | 9           | 11          | 0.4438      | trivial     | 5           | 31          | 1           |
+| 3           | 9           | 11          | 0.4628      | trivial     | 5           | 34          | 2           |
+| 4           | -           | -           | TLE (>5)    | trivial     | -           | -           | 1           |
+| 4           | -           | -           | TLE (>5)    | trivial     | -           | -           | 2           |
+| 3           | 9           | 11          | 0.0409      | admissible1 | 5           | 31          | 1           |
+| 3           | 9           | 11          | 0.0429      | admissible1 | 5           | 36          | 2           |
+| 4           | 10          | 12          | 0.358       | admissible1 | 6           | 44          | 1           |
+| 4           | 11          | 13          | 0.358       | admissible1 | 6           | 50          | 2           |
+| 3           | 9           | 11          | 0.0249      | admissible2 | 5           | 31          | 1           |
+| 3           | 10          | 12          | 0.0249      | admissible2 | 5           | 36          | 2           |
+| 4           | 10          | 12          | 0.0599      | admissible2 | 6           | 44          | 1           |
+| 4           | 11          | 13          | 0.3351      | admissible2 | 6           | 49          | 2           |
+| 3           | 10          | 13          | 0.011       | non-adm     | 6           | 41          | 1           |
+| 3           | 11          | 15          | 0.011       | non-adm     | 6           | 47          | 2           |
+| 4           | 14          | 16          | 0.2234      | non-adm     | 9           | 64          | 1           |
+| 4           | 15          | 17          | 0.2244      | non-adm     | 9           | 71          | 2           |
 
 
 # Running the program
