@@ -120,8 +120,8 @@ For all the algorithms 2 diffrent paths are required, and the timeout is 5 secon
 #### IDFS
 | Input file  | Lenght      |   Cost      | Time (s)    |  MemMax     |  NMax       |   Sol Idx   |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 3           | 9           | 11          | 1.2836      | 26574       | 36315       | 1           |
-| 3           | 9           | 11          | 1.3065      | 27068       | 36999       | 2           |
+| 3           | 9           | 11          | 1.2836      | 5           | 40          | 1           |
+| 3           | 9           | 11          | 1.3065      | 5           | 45          | 2           |
 | 4           | -           | -           | TLE (>5)    | -           | -           | 1           |
 | 4           | -           | -           | TLE (>5)    | -           | -           | 2           |
 
